@@ -15,13 +15,13 @@ struct ContentView: View {
             if count == 4 {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                     self.checkPassword(pswd: self.newPass)
-                    self.showNext = true
                 }
             }
         }
     }
     
     @State private var showNext = false
+    @State private var showShake = false
     
     @State private var newPass = ""
     @State private var myPassword = "1234"
@@ -49,7 +49,7 @@ struct ContentView: View {
                         
                         Image(systemName: self.count > 3 ? "circle.fill" : "circle")
                             .font(.headline)
-                    }
+                    }.offset(x: self.showShake ? -5 : 0).animation(Animation.default.repeatCount(2).speed(5))
                     
                     Spacer()
                     
@@ -245,8 +245,12 @@ struct ContentView: View {
     func checkPassword(pswd: String) {
         if myPassword == pswd {
             print("Matched")
+            self.count = 0
+            self.newPass = ""
+            self.showNext = true
         } else {
             print("Not Matched")
+            self.showShake = true
             self.count = 0
             self.newPass = ""
         }
