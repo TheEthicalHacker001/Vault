@@ -13,6 +13,7 @@
 		366001B0247C27F9009B4F08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366001AF247C27F9009B4F08 /* Assets.xcassets */; };
 		366001B3247C27F9009B4F08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366001B2247C27F9009B4F08 /* Preview Assets.xcassets */; };
 		366001B6247C27F9009B4F08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366001B4247C27F9009B4F08 /* LaunchScreen.storyboard */; };
+		366001BE247C2811009B4F08 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366001BD247C2811009B4F08 /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		366001B2247C27F9009B4F08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		366001B5247C27F9009B4F08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		366001B7247C27F9009B4F08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		366001BD247C2811009B4F08 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				366001A9247C27F7009B4F08 /* AppDelegate.swift */,
 				366001AB247C27F7009B4F08 /* SceneDelegate.swift */,
 				366001AD247C27F7009B4F08 /* ContentView.swift */,
+				366001BD247C2811009B4F08 /* SecondView.swift */,
 				366001AF247C27F9009B4F08 /* Assets.xcassets */,
 				366001B4247C27F9009B4F08 /* LaunchScreen.storyboard */,
 				366001B7247C27F9009B4F08 /* Info.plist */,
@@ -148,6 +151,7 @@
 			files = (
 				366001AA247C27F7009B4F08 /* AppDelegate.swift in Sources */,
 				366001AC247C27F7009B4F08 /* SceneDelegate.swift in Sources */,
+				366001BE247C2811009B4F08 /* SecondView.swift in Sources */,
 				366001AE247C27F7009B4F08 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
